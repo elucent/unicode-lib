@@ -4,7 +4,7 @@ Not actually that magical...just a fairly lightweight unicode utility. Still kin
 
 This is neither the fastest nor most complete thing out there, but it covers a few core unicode features:
 encoding, decoding, and character types. These are implemented at the bottom of utf8.c. The library is
-intended for static linkage, does not depend on libc, and produces a binary less than 32 kB in size (at least on my current laptop).
+intended to be linked statically, does not depend on libc, and produces a binary less than 32 kB in size (at least on my current laptop).
 
 Most of the code / binary size in this library comes from the code-point range tables in utf8.c. 
 These arrays can be automatically generated from a Unicode Character Database distribution using
